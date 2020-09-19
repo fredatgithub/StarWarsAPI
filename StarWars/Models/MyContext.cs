@@ -12,6 +12,6 @@ namespace StarWars.Models
     public virtual DbSet<Transport> Transports { get; set; }
     public virtual DbSet<Vehicle> Vehicles { get; set; }
 
-    public MyContext() : base("name = StarWars") { }
+    public MyContext() : base("name=StarWarsDB") { }
   }
 }

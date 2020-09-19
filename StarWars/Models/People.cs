@@ -19,5 +19,24 @@ namespace StarWars.Models
     public string Gender { get; set; }
     public Planet Homeworld { get; set; }
 
+    public People()
+    {
+      Created = DateTime.Now;
+      Edited = DateTime.Now;
+      Name = "no name";
+      Homeworld = new Planet();
+    }
+
+    public People(string name)
+    {
+      Name = name;
+    }
+
+    public People(string name, DateTime created, DateTime edited)
+    {
+      Name = name;
+      Created = created;
+      Edited = edited;
+    }
   }
 }

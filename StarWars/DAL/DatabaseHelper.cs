@@ -4,7 +4,7 @@
   {
     public static string ConnexionString()
     {
-      return "Data Source=DESKTOP-MSI;Initial Catalog=CryptoCurrencies;Integrated Security=True";
+      return "Data Source=DESKTOP-MSI;Initial Catalog=StarWars2;Integrated Security=True";
     }
   }
 }
