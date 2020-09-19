@@ -1,9 +1,11 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace StarWars.Models
 {
   public class Film
   {
+    [Key]
     public int FilmId { get; set; }
     public DateTime Created { get; set; }
     public DateTime Edited { get; set; }

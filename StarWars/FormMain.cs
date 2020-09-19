@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StarWars.Models;
+using System;
 using System.Windows.Forms;
 
 namespace StarWars
@@ -12,11 +13,11 @@ namespace StarWars
 
     private void FormMain_Load(object sender, EventArgs e)
     {
-      //using (MyContext context = new MyContext())
-      //{
-      //  // Create and save a new entity like starship
+      using (MyContext context = new MyContext())
+      {
+        // Create and save a new entity like starship
 
-      //}
+      }
     }
   }
 }

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace StarWars.Models
 {
   public class Transport
   {
+    [Key]
     public int TransportId { get; set; }
     public DateTime Created { get; set; }
     public DateTime Edited { get; set; }
