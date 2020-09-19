@@ -1,4 +1,6 @@
-﻿namespace StarWars.Models
+﻿using System.Collections.Generic;
+
+namespace StarWars.Models
 {
   public class Starship
   {
@@ -7,5 +9,7 @@
     public string MGLT { get; set; }
     public string Starship_class { get; set; }
     public People Pilots { get; set; }
+
+    public virtual ICollection<People> ListOfPilots { get; set; }
   }
 }

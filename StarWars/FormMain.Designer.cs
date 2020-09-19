@@ -128,6 +128,7 @@
       this.Controls.Add(this.tabControlMain);
       this.Name = "FormMain";
       this.Text = "Star Wars";
+      this.Load += new System.EventHandler(this.FormMain_Load);
       this.tabControlMain.ResumeLayout(false);
       this.ResumeLayout(false);
 

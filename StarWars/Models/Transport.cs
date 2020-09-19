@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace StarWars.Models
 {
   public class Transport
   {
-    public int Id { get; set; }
+    public int TransportId { get; set; }
     public DateTime Created { get; set; }
     public DateTime Edited { get; set; }
     public string Name { get; set; }
@@ -18,5 +19,7 @@ namespace StarWars.Models
     public string Cargo_capacity { get; set; }
     public string Consumables { get; set; }
     public People Pilots { get; set; }
+
+    public virtual ICollection<People> ListOfPilots { get; set; }
   }
 }

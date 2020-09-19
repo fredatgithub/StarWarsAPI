@@ -4,7 +4,7 @@ namespace StarWars.Models
 {
   public class People
   {
-    public int Id { get; set; }
+    public int PeopleId { get; set; }
     public DateTime Created { get; set; }
     public DateTime Edited { get; set; }
     public string Name { get; set; }

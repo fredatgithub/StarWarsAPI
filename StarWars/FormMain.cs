@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace StarWars
@@ -15,6 +8,15 @@ namespace StarWars
     public FormMain()
     {
       InitializeComponent();
+    }
+
+    private void FormMain_Load(object sender, EventArgs e)
+    {
+      //using (MyContext context = new MyContext())
+      //{
+      //  // Create and save a new entity like starship
+
+      //}
     }
   }
 }

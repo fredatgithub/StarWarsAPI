@@ -4,7 +4,7 @@ namespace StarWars.Models
 {
   public class Planet
   {
-    public int Id { get; set; }
+    public int PlanetId { get; set; }
     public DateTime Created { get; set; }
     public DateTime Edited { get; set; }
     public string Name { get; set; }
