@@ -1,8 +1,9 @@
-﻿using Newtonsoft.Json;
+﻿using ConsoleAppGetAPI.Models;
+using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Threading;
 
 namespace ConsoleAppGetAPI
 {
@@ -14,32 +15,72 @@ namespace ConsoleAppGetAPI
       display("Get JSON from Starwars API");
       string url1 = "https://swapi.dev/api/people/1/";
 
-      string apiUrlBase = "https://swapi.dev/api/people/";
+      string apiUrlBase = "https://swapi.dev/api";
       string apiUrl = "https://swapi.dev/api/people/";
       string className = "people";
-      for (int i = 1; i < 10; i++)
+      //for (int i = 1; i <= 83; i++)
+      //{
+      //  if (i == 17)
+      //  {
+      //    continue;
+      //  }
+
+      //  apiUrl = $"{apiUrlBase}/{className}/{i}/";
+      //  var myJsonResponse = GetAPIFromUrl(apiUrl);
+      //  People myDeserializedClass = JsonConvert.DeserializeObject<People>(myJsonResponse);
+      //  bool insertResult = false;
+      //  myJsonResponse = GetAPIFromUrl(apiUrl);
+      //  myDeserializedClass = JsonConvert.DeserializeObject<People>(myJsonResponse);
+      //  display($"{myDeserializedClass}");
+      //  //insertResult = WriteToFile(myDeserializedClass, className, i);
+      //  Thread.Sleep(1500);
+      //}
+
+      // planets
+      className = "planets";
+      //for (int i = 1; i <= 60; i++)
+      //{
+      //  apiUrl = $"{apiUrlBase}/{className}/{i}/";
+      //  var myJsonResponse = GetAPIFromUrl(apiUrl);
+      //  Planets myDeserializedClass = JsonConvert.DeserializeObject<Planets>(myJsonResponse);
+      //  bool insertResult = false;
+      //  myJsonResponse = GetAPIFromUrl(apiUrl);
+      //  myDeserializedClass = JsonConvert.DeserializeObject<Planets>(myJsonResponse);
+      //  display($"{myDeserializedClass}");
+      //  //insertResult = WriteToFile(myDeserializedClass, className, i);
+      //  Thread.Sleep(1500);
+      //}
+
+      // starships
+      className = "starships";
+      for (int i = 2; i <= 43; i++)// 2 to 43
       {
+        if (i == 4 || i == 6 || i == 7 || i == 8 || i == 14 || i == 16 || i == 18 || i == 19 || i == 20 || i == 24 || i == 25 || i == 26 || i == 30 || i == 33 || i == 34 || i == 35 || i == 36 || i == 37 || i == 38 || i == 42)
+        {
+          continue;
+        }
+
         apiUrl = $"{apiUrlBase}/{className}/{i}/";
-
+        var myJsonResponse = GetAPIFromUrl(apiUrl);
+        Starships myDeserializedClass = JsonConvert.DeserializeObject<Starships>(myJsonResponse);
+        bool insertResult = false;
+        myJsonResponse = GetAPIFromUrl(apiUrl);
+        myDeserializedClass = JsonConvert.DeserializeObject<Starships>(myJsonResponse);
+        display($"{myDeserializedClass}");
+        //insertResult = WriteToFile(myDeserializedClass, className, i);
+        Thread.Sleep(1500);
       }
-      var myJsonResponse = GetAPIFromUrl(apiUrl);
-      People myDeserializedClass = JsonConvert.DeserializeObject<People>(myJsonResponse);
-      bool insertResult = false;
-      myJsonResponse = GetAPIFromUrl(apiUrl);
-      myDeserializedClass = JsonConvert.DeserializeObject<People>(myJsonResponse);
-      display($"{myDeserializedClass}");
 
-      insertResult = WriteToFile(myDeserializedClass);
 
       display("Press any key to exit:");
       Console.ReadKey();
     }
 
-    private static bool WriteToFile(object mydeserializedObject)
+    private static bool WriteToFile(object mydeserializedObject, string fileName, int number)
     {
       try
       {
-        using (StreamWriter sw = new StreamWriter("luke1.txt"))
+        using (StreamWriter sw = new StreamWriter($"{fileName}{number}.txt"))
         {
           sw.Write(mydeserializedObject.ToString());
         }
@@ -71,26 +112,5 @@ namespace ConsoleAppGetAPI
     }
 
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
-    public class People
-    {
-      public string name { get; set; }
-      public string height { get; set; }
-      public string mass { get; set; }
-      public string hair_color { get; set; }
-      public string skin_color { get; set; }
-      public string eye_color { get; set; }
-      public string birth_year { get; set; }
-      public string gender { get; set; }
-      public string homeworld { get; set; }
-      public List<string> films { get; set; }
-      public List<object> species { get; set; }
-      public List<string> vehicles { get; set; }
-      public List<string> starships { get; set; }
-      public DateTime created { get; set; }
-      public DateTime edited { get; set; }
-      public string url { get; set; }
-    }
-
-
   }
 }
