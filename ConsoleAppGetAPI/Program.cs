@@ -52,20 +52,35 @@ namespace ConsoleAppGetAPI
       //}
 
       // starships
-      className = "starships";
-      for (int i = 2; i <= 43; i++)// 2 to 43
-      {
-        if (i == 4 || i == 6 || i == 7 || i == 8 || i == 14 || i == 16 || i == 18 || i == 19 || i == 20 || i == 24 || i == 25 || i == 26 || i == 30 || i == 33 || i == 34 || i == 35 || i == 36 || i == 37 || i == 38 || i == 42)
-        {
-          continue;
-        }
+      //className = "starships";
+      //for (int i = 2; i <= 43; i++)// 2 to 43
+      //{
+      //  if (i == 4 || i == 6 || i == 7 || i == 8 || i == 14 || i == 16 || i == 18 || i == 19 || i == 20 || i == 24 || i == 25 || i == 26 || i == 30 || i == 33 || i == 34 || i == 35 || i == 36 || i == 37 || i == 38 || i == 42)
+      //  {
+      //    continue;
+      //  }
 
+      //  apiUrl = $"{apiUrlBase}/{className}/{i}/";
+      //  var myJsonResponse = GetAPIFromUrl(apiUrl);
+      //  Starships myDeserializedClass = JsonConvert.DeserializeObject<Starships>(myJsonResponse);
+      //  bool insertResult = false;
+      //  myJsonResponse = GetAPIFromUrl(apiUrl);
+      //  myDeserializedClass = JsonConvert.DeserializeObject<Starships>(myJsonResponse);
+      //  display($"{myDeserializedClass}");
+      //  //insertResult = WriteToFile(myDeserializedClass, className, i);
+      //  Thread.Sleep(1500);
+      //}
+
+      // films
+      className = "films";
+      for (int i = 1; i <= 6; i++)// 1 to 6
+      {
         apiUrl = $"{apiUrlBase}/{className}/{i}/";
         var myJsonResponse = GetAPIFromUrl(apiUrl);
-        Starships myDeserializedClass = JsonConvert.DeserializeObject<Starships>(myJsonResponse);
+        Films myDeserializedClass = JsonConvert.DeserializeObject<Films>(myJsonResponse);
         bool insertResult = false;
         myJsonResponse = GetAPIFromUrl(apiUrl);
-        myDeserializedClass = JsonConvert.DeserializeObject<Starships>(myJsonResponse);
+        myDeserializedClass = JsonConvert.DeserializeObject<Films>(myJsonResponse);
         display($"{myDeserializedClass}");
         //insertResult = WriteToFile(myDeserializedClass, className, i);
         Thread.Sleep(1500);

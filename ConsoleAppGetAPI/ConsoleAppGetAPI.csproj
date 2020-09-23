@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Films.cs" />
     <Compile Include="Models\People.cs" />
     <Compile Include="Models\Planets.cs" />
     <Compile Include="Models\Starships.cs" />
