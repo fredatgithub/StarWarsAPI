@@ -18,58 +18,58 @@ namespace ConsoleAppGetAPI
       string apiUrlBase = "https://swapi.dev/api";
       string apiUrl = "https://swapi.dev/api/people/";
       string className = "people";
-      //for (int i = 1; i <= 83; i++)
-      //{
-      //  if (i == 17)
-      //  {
-      //    continue;
-      //  }
+      for (int i = 1; i <= 83; i++)
+      {
+        if (i == 17)
+        {
+          continue;
+        }
 
-      //  apiUrl = $"{apiUrlBase}/{className}/{i}/";
-      //  var myJsonResponse = GetAPIFromUrl(apiUrl);
-      //  People myDeserializedClass = JsonConvert.DeserializeObject<People>(myJsonResponse);
-      //  bool insertResult = false;
-      //  myJsonResponse = GetAPIFromUrl(apiUrl);
-      //  myDeserializedClass = JsonConvert.DeserializeObject<People>(myJsonResponse);
-      //  display($"{myDeserializedClass}");
-      //  //insertResult = WriteToFile(myDeserializedClass, className, i);
-      //  Thread.Sleep(1500);
-      //}
+        apiUrl = $"{apiUrlBase}/{className}/{i}/";
+        var myJsonResponse = GetAPIFromUrl(apiUrl);
+        People myDeserializedClass = JsonConvert.DeserializeObject<People>(myJsonResponse);
+        bool insertResult = false;
+        myJsonResponse = GetAPIFromUrl(apiUrl);
+        myDeserializedClass = JsonConvert.DeserializeObject<People>(myJsonResponse);
+        display($"{myDeserializedClass}");
+        insertResult = WriteToFile(myDeserializedClass, className, i);
+        Thread.Sleep(1500);
+      }
 
       // planets
       className = "planets";
-      //for (int i = 1; i <= 60; i++)
-      //{
-      //  apiUrl = $"{apiUrlBase}/{className}/{i}/";
-      //  var myJsonResponse = GetAPIFromUrl(apiUrl);
-      //  Planets myDeserializedClass = JsonConvert.DeserializeObject<Planets>(myJsonResponse);
-      //  bool insertResult = false;
-      //  myJsonResponse = GetAPIFromUrl(apiUrl);
-      //  myDeserializedClass = JsonConvert.DeserializeObject<Planets>(myJsonResponse);
-      //  display($"{myDeserializedClass}");
-      //  //insertResult = WriteToFile(myDeserializedClass, className, i);
-      //  Thread.Sleep(1500);
-      //}
+      for (int i = 1; i <= 60; i++)
+      {
+        apiUrl = $"{apiUrlBase}/{className}/{i}/";
+        var myJsonResponse = GetAPIFromUrl(apiUrl);
+        Planets myDeserializedClass = JsonConvert.DeserializeObject<Planets>(myJsonResponse);
+        bool insertResult = false;
+        myJsonResponse = GetAPIFromUrl(apiUrl);
+        myDeserializedClass = JsonConvert.DeserializeObject<Planets>(myJsonResponse);
+        display($"{myDeserializedClass}");
+        insertResult = WriteToFile(myDeserializedClass, className, i);
+        Thread.Sleep(1500);
+      }
 
       // starships
-      //className = "starships";
-      //for (int i = 2; i <= 43; i++)// 2 to 43
-      //{
-      //  if (i == 4 || i == 6 || i == 7 || i == 8 || i == 14 || i == 16 || i == 18 || i == 19 || i == 20 || i == 24 || i == 25 || i == 26 || i == 30 || i == 33 || i == 34 || i == 35 || i == 36 || i == 37 || i == 38 || i == 42)
-      //  {
-      //    continue;
-      //  }
+      className = "starships";
+      for (int i = 2; i <= 43; i++)// 2 to 43
+      {
+        if (i == 4 || i == 6 || i == 7 || i == 8 || i == 14 || i == 16 || i == 18 || i == 19 || i == 20 || i == 24 || i == 25 || i == 26 || i == 30 || i == 33 || i == 34 || i == 35 || i == 36 || i == 37 || i == 38 || i == 42)
+        {
+          continue;
+        }
 
-      //  apiUrl = $"{apiUrlBase}/{className}/{i}/";
-      //  var myJsonResponse = GetAPIFromUrl(apiUrl);
-      //  Starships myDeserializedClass = JsonConvert.DeserializeObject<Starships>(myJsonResponse);
-      //  bool insertResult = false;
-      //  myJsonResponse = GetAPIFromUrl(apiUrl);
-      //  myDeserializedClass = JsonConvert.DeserializeObject<Starships>(myJsonResponse);
-      //  display($"{myDeserializedClass}");
-      //  //insertResult = WriteToFile(myDeserializedClass, className, i);
-      //  Thread.Sleep(1500);
-      //}
+        apiUrl = $"{apiUrlBase}/{className}/{i}/";
+        var myJsonResponse = GetAPIFromUrl(apiUrl);
+        Starships myDeserializedClass = JsonConvert.DeserializeObject<Starships>(myJsonResponse);
+        bool insertResult = false;
+        myJsonResponse = GetAPIFromUrl(apiUrl);
+        myDeserializedClass = JsonConvert.DeserializeObject<Starships>(myJsonResponse);
+        display($"{myDeserializedClass}");
+        insertResult = WriteToFile(myDeserializedClass, className, i);
+        Thread.Sleep(1500);
+      }
 
       // films
       className = "films";
@@ -82,9 +82,25 @@ namespace ConsoleAppGetAPI
         myJsonResponse = GetAPIFromUrl(apiUrl);
         myDeserializedClass = JsonConvert.DeserializeObject<Films>(myJsonResponse);
         display($"{myDeserializedClass}");
-        //insertResult = WriteToFile(myDeserializedClass, className, i);
+        insertResult = WriteToFile(myDeserializedClass, className, i);
         Thread.Sleep(1500);
       }
+
+      // species
+      className = "species";
+      for (int i = 1; i <= 37; i++)// 1 to 37
+      {
+        apiUrl = $"{apiUrlBase}/{className}/{i}/";
+        var myJsonResponse = GetAPIFromUrl(apiUrl);
+        Species myDeserializedClass = JsonConvert.DeserializeObject<Species>(myJsonResponse);
+        bool insertResult = false;
+        myJsonResponse = GetAPIFromUrl(apiUrl);
+        myDeserializedClass = JsonConvert.DeserializeObject<Species>(myJsonResponse);
+        display($"{myDeserializedClass}");
+        insertResult = WriteToFile(myDeserializedClass, className, i);
+        Thread.Sleep(1500);
+      }
+
 
 
       display("Press any key to exit:");

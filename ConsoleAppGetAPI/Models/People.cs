@@ -21,5 +21,10 @@ namespace ConsoleAppGetAPI.Models
     public DateTime created { get; set; }
     public DateTime edited { get; set; }
     public string url { get; set; }
+
+    public override string ToString()
+    {
+      return base.ToString();
+    }
   }
 }
