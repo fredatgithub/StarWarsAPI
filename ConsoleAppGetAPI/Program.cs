@@ -101,8 +101,6 @@ namespace ConsoleAppGetAPI
         Thread.Sleep(1500);
       }
 
-
-
       display("Press any key to exit:");
       Console.ReadKey();
     }
