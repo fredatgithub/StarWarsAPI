@@ -159,22 +159,21 @@ namespace ConsoleAppGetAPI
         {
           switch (className.ToString())
           {
-
             case "films":
-              command.Parameters.AddWithValue("@thetitle", thetitle);
-              command.Parameters.AddWithValue("@theepisode_id", theepisode_id);
-              command.Parameters.AddWithValue("@theopening_crawl", theopening_crawl);
-              command.Parameters.AddWithValue("@thedirector", thedirector);
-              command.Parameters.AddWithValue("@theproducer", theproducer);
-              command.Parameters.AddWithValue("@therelease_date", therelease_date);
-              command.Parameters.AddWithValue("@thecharacters", thecharacters);
-              command.Parameters.AddWithValue("@theplanets", theplanets);
-              command.Parameters.AddWithValue("@thestarships", thestarships);
-              command.Parameters.AddWithValue("@thevehicles", thevehicles);
-              command.Parameters.AddWithValue("@thespecies", thespecies);
-              command.Parameters.AddWithValue("@thecreated", thecreated);
-              command.Parameters.AddWithValue("@theedited", theedited);
-              command.Parameters.AddWithValue("@theurl", theurl);
+              //command.Parameters.AddWithValue("@thetitle", thetitle);
+              //command.Parameters.AddWithValue("@theepisode_id", theepisode_id);
+              //command.Parameters.AddWithValue("@theopening_crawl", theopening_crawl);
+              //command.Parameters.AddWithValue("@thedirector", thedirector);
+              //command.Parameters.AddWithValue("@theproducer", theproducer);
+              //command.Parameters.AddWithValue("@therelease_date", therelease_date);
+              //command.Parameters.AddWithValue("@thecharacters", thecharacters);
+              //command.Parameters.AddWithValue("@theplanets", theplanets);
+              //command.Parameters.AddWithValue("@thestarships", thestarships);
+              //command.Parameters.AddWithValue("@thevehicles", thevehicles);
+              //command.Parameters.AddWithValue("@thespecies", thespecies);
+              //command.Parameters.AddWithValue("@thecreated", thecreated);
+              //command.Parameters.AddWithValue("@theedited", theedited);
+              //command.Parameters.AddWithValue("@theurl", theurl);
 
               break;
             default:

@@ -82,6 +82,7 @@ namespace ConsoleAppGetAPI.Models
     public string ToJsonString()
     {
       StringBuilder result = new StringBuilder();
+      result.Append("{");
       result.Append($"{Environment.NewLine}");
       result.Append($"\"name\":\"{name}\",");
       result.Append($"{Environment.NewLine}");
@@ -102,12 +103,23 @@ namespace ConsoleAppGetAPI.Models
       result.Append($"\"homeworld\":\"{homeworld}\",");
       result.Append($"{Environment.NewLine}");
 
+      int counter = 0;
+      string comma = ",";
       if (films.Count > 0)
       {
+        counter = 0;
+        comma = ",";
         result.Append($"\"films\":[");
+        result.Append($"{Environment.NewLine}");
         foreach (string film in films)
         {
-          result.Append($"\"{film}\",");
+          counter++;
+          if (counter == films.Count)
+          {
+            comma = string.Empty;
+          }
+
+          result.Append($"\"{film}\"{comma}");
           result.Append($"{Environment.NewLine}");
         }
 
@@ -122,10 +134,19 @@ namespace ConsoleAppGetAPI.Models
 
       if (species.Count > 0)
       {
+        counter = 0;
+        comma = ",";
         result.Append($"\"species\":[");
+        result.Append($"{Environment.NewLine}");
         foreach (string item in species)
         {
-          result.Append($"\"{item}\",");
+          counter++;
+          if (counter == species.Count)
+          {
+            comma = string.Empty;
+          }
+
+          result.Append($"\"{item}\"{comma}");
           result.Append($"{Environment.NewLine}");
         }
 
@@ -140,10 +161,19 @@ namespace ConsoleAppGetAPI.Models
 
       if (vehicles.Count > 0)
       {
+        counter = 0;
+        comma = ",";
         result.Append($"\"vehicles\":[");
+        result.Append($"{Environment.NewLine}");
         foreach (string item in vehicles)
         {
-          result.Append($"\"{item}\",");
+          counter++;
+          if (counter == vehicles.Count)
+          {
+            comma = string.Empty;
+          }
+
+          result.Append($"\"{item}\"{comma}");
           result.Append($"{Environment.NewLine}");
         }
 
@@ -158,10 +188,19 @@ namespace ConsoleAppGetAPI.Models
 
       if (starships.Count > 0)
       {
+        counter = 0;
+        comma = ",";
         result.Append($"\"starships\":[");
+        result.Append($"{Environment.NewLine}");
         foreach (string item in starships)
         {
-          result.Append($"\"{item}\",");
+          counter++;
+          if (counter == starships.Count)
+          {
+            comma = string.Empty;
+          }
+
+          result.Append($"\"{item}\"{comma}");
           result.Append($"{Environment.NewLine}");
         }
 
@@ -178,7 +217,7 @@ namespace ConsoleAppGetAPI.Models
       result.Append($"{Environment.NewLine}");
       result.Append($"edited:{edited},");
       result.Append($"{Environment.NewLine}");
-      result.Append($"url:{url},");
+      result.Append($"url:{url}");
       result.Append($"{Environment.NewLine}");
       result.Append("}");
       result.Append($"{Environment.NewLine}");
