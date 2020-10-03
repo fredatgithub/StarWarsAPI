@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace ConsoleAppGetAPI.Models
 {
@@ -19,5 +20,76 @@ namespace ConsoleAppGetAPI.Models
     public DateTime created { get; set; }
     public DateTime edited { get; set; }
     public string url { get; set; }
+
+    public string ToJsonString()
+    {
+      StringBuilder result = new StringBuilder();
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"name\":\"{name}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"rotation_period\":\"{rotation_period}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"orbital_period\":\"{orbital_period}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"diameter\":\"{diameter}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"climate\":\"{climate}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"gravity\":\"{gravity}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"terrain\":\"{terrain}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"surface_water\":\"{surface_water}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"population\":\"{population}\",");
+      result.Append($"{Environment.NewLine}");
+
+      if (residents.Count > 0)
+      {
+        result.Append($"\"residents\":[");
+        foreach (string item in residents)
+        {
+          result.Append($"\"{item}\",");
+          result.Append($"{Environment.NewLine}");
+        }
+
+        result.Append($"],");
+        result.Append($"{Environment.NewLine}");
+      }
+      else
+      {
+        result.Append($"\"residents\":[],");
+        result.Append($"{Environment.NewLine}");
+      }
+
+      if (films.Count > 0)
+      {
+        result.Append($"\"films\":[");
+        foreach (string item in films)
+        {
+          result.Append($"\"{item}\",");
+          result.Append($"{Environment.NewLine}");
+        }
+
+        result.Append($"],");
+        result.Append($"{Environment.NewLine}");
+      }
+      else
+      {
+        result.Append($"\"films\":[],");
+        result.Append($"{Environment.NewLine}");
+      }
+
+      result.Append($"created:{created},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"edited:{edited},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"url:{url},");
+      result.Append($"{Environment.NewLine}");
+      result.Append("}");
+      result.Append($"{Environment.NewLine}");
+
+      return result.ToString();
+    }
   }
 }

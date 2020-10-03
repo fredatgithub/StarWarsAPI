@@ -1,6 +1,7 @@
 ﻿using ConsoleAppGetAPI.Models;
 using Newtonsoft.Json;
 using System;
+using System.Data.SqlClient;
 using System.IO;
 using System.Net;
 using System.Threading;
@@ -32,7 +33,7 @@ namespace ConsoleAppGetAPI
         myJsonResponse = GetAPIFromUrl(apiUrl);
         myDeserializedClass = JsonConvert.DeserializeObject<People>(myJsonResponse);
         display($"{myDeserializedClass}");
-        insertResult = WriteToFile(myDeserializedClass, className, i);
+        insertResult = WriteToFile(myDeserializedClass.ToJsonString(), className, i);
         Thread.Sleep(1500);
       }
 
@@ -47,7 +48,7 @@ namespace ConsoleAppGetAPI
         myJsonResponse = GetAPIFromUrl(apiUrl);
         myDeserializedClass = JsonConvert.DeserializeObject<Planets>(myJsonResponse);
         display($"{myDeserializedClass}");
-        insertResult = WriteToFile(myDeserializedClass, className, i);
+        insertResult = WriteToFile(myDeserializedClass.ToJsonString(), className, i);
         Thread.Sleep(1500);
       }
 
@@ -67,7 +68,7 @@ namespace ConsoleAppGetAPI
         myJsonResponse = GetAPIFromUrl(apiUrl);
         myDeserializedClass = JsonConvert.DeserializeObject<Starships>(myJsonResponse);
         display($"{myDeserializedClass}");
-        insertResult = WriteToFile(myDeserializedClass, className, i);
+        insertResult = WriteToFile(myDeserializedClass.ToJsonString(), className, i);
         Thread.Sleep(1500);
       }
 
@@ -82,7 +83,7 @@ namespace ConsoleAppGetAPI
         myJsonResponse = GetAPIFromUrl(apiUrl);
         myDeserializedClass = JsonConvert.DeserializeObject<Films>(myJsonResponse);
         display($"{myDeserializedClass}");
-        insertResult = WriteToFile(myDeserializedClass, className, i);
+        insertResult = WriteToFile(myDeserializedClass.ToJsonString(), className, i);
         Thread.Sleep(1500);
       }
 
@@ -97,23 +98,21 @@ namespace ConsoleAppGetAPI
         myJsonResponse = GetAPIFromUrl(apiUrl);
         myDeserializedClass = JsonConvert.DeserializeObject<Species>(myJsonResponse);
         display($"{myDeserializedClass}");
-        insertResult = WriteToFile(myDeserializedClass, className, i);
+        insertResult = WriteToFile(myDeserializedClass.ToJsonString(), className, i);
         Thread.Sleep(1500);
       }
-
-
 
       display("Press any key to exit:");
       Console.ReadKey();
     }
 
-    private static bool WriteToFile(object mydeserializedObject, string fileName, int number)
+    private static bool WriteToFile(string deserializedObject, string fileName, int number)
     {
       try
       {
         using (StreamWriter sw = new StreamWriter($"{fileName}{number}.txt"))
         {
-          sw.Write(mydeserializedObject.ToString());
+          sw.Write(deserializedObject);
         }
       }
       catch (Exception)
@@ -122,6 +121,161 @@ namespace ConsoleAppGetAPI
       }
 
       return true;
+    }
+
+    private static bool SaveToDatabase(string deserializedObject, string className)
+    {
+      string connexionString = GetConnexionString();
+      bool result = false;
+      string table = $"[{className}]";
+      string queryStart = "INSERT INTO [dbo].";
+      string queryTableName = string.Empty;
+      string queryEnd = "([Date], [RateEuros], [RateDollar]) VALUES(@theDate, @rateEuro, @ratedollar)";
+      switch (className.ToString())
+      {
+        case "films":
+          queryEnd = "([title], [episode_id], [opening_crawl], [director], [producer], [release_date], [characters], [planets], [starships], [vehicles], [species], [created], [edited], [url]) VALUES (@thetitle, @theepisode_id, @theopening_crawl, @thedirector , @theproducer , @therelease_date , @thecharacters , @theplanets , @thestarships , @thevehicles , @thespecies , @thecreated , @theedited , @theurl )";
+          break;
+        case "people":
+          queryEnd = "([name], [height], [mass], [hair_color], [skin_color], [eye_color], [birth_year], [gender], [homeworld], [films], [species], [vehicles], [starships], [created], [edited], [url]) VALUES thename, @theheight, @themass, @thehair_color, @theskin_color, @theeye_color, @thebirth_year, @thegender, @thehomeworld, @thefilms, @thespecies, @thevehicles, @thestarships, @thecreated, @theedited, @theurl)";
+          break;
+        case "planets":
+          queryEnd = "([name], [rotation_period], [orbital_period], [diameter], [climate], [gravity], [terrain], [surface_water], [population], [residents], [films], [created], [edited], [url]) VALUES (@thename, @therotation_period, @theorbital_period, @thediameter, @theclimate, @thegravity, @theterrain, @thesurface_water, @thepopulation, @theresidents, @thefilms, @thecreated, @theedited, @theurl)";
+          break;
+        case "species":
+          queryEnd = "([name], [classification], [designation], [average_height], [skin_colors], [hair_colors], [eye_colors], [average_lifespan], [homeworld], [language], [people], [films], [created], [edited], [url]) VALUES (@thename, @theclassification, @thedesignation, @theaverage_height, @theskin_colors, @thehair_colors, @theeye_colors, @theaverage_lifespan, @thehomeworld, @thelanguage, @thepeople, @thefilms, @thecreated, @theedited, @theurl)";
+          break;
+        case "starships":
+          queryEnd = "([name], [model], [manufacturer], [cost_in_credits], [length], [max_atmosphering_speed], [crew], [passengers], [cargo_capacity], [consumables], [hyperdrive_rating], [MGLT], [starship_class], [pilots], [films], [created], [edited], [url]) VALUES(@thename, @themodel, @themanufacturer, @thecost_in_credits, @thelength, @themax_atmosphering_speed, @thecrew, @thepassengers, @thecargo_capacity, @theconsumables, @thehyperdrive_rating, @theMGLT, @thestarship_class, @thepilots, @thefilms, @thecreated, @theedited, @theurl)";
+          break;
+
+      }
+
+      using (SqlConnection connection = new SqlConnection(connexionString))
+      {
+        string query = $"{queryStart}{table} {queryEnd}";
+
+        using (SqlCommand command = new SqlCommand(query, connection))
+        {
+          switch (className.ToString())
+          {
+
+            case "films":
+              command.Parameters.AddWithValue("@thetitle", thetitle);
+              command.Parameters.AddWithValue("@theepisode_id", theepisode_id);
+              command.Parameters.AddWithValue("@theopening_crawl", theopening_crawl);
+              command.Parameters.AddWithValue("@thedirector", thedirector);
+              command.Parameters.AddWithValue("@theproducer", theproducer);
+              command.Parameters.AddWithValue("@therelease_date", therelease_date);
+              command.Parameters.AddWithValue("@thecharacters", thecharacters);
+              command.Parameters.AddWithValue("@theplanets", theplanets);
+              command.Parameters.AddWithValue("@thestarships", thestarships);
+              command.Parameters.AddWithValue("@thevehicles", thevehicles);
+              command.Parameters.AddWithValue("@thespecies", thespecies);
+              command.Parameters.AddWithValue("@thecreated", thecreated);
+              command.Parameters.AddWithValue("@theedited", theedited);
+              command.Parameters.AddWithValue("@theurl", theurl);
+
+              break;
+            default:
+              break;
+          }
+
+
+          connection.Open();
+          var QueryResult = command.ExecuteNonQuery();
+
+          // Check Error
+          if (QueryResult < 0)
+          {
+            //var errorMessage = "Error inserting data into Database!";
+            result = false;
+          }
+          else
+          {
+            result = true;
+          }
+        }
+
+        return true;
+      }
+    }
+
+    public static string GetLatestDate()
+    {
+      string result = string.Empty;
+      string connectionString = GetConnexionString();
+      string query = "SELECT TOP(1) Date FROM BitCoin order by date DESC";
+
+      using (SqlConnection connection = new SqlConnection(connectionString))
+      {
+        SqlCommand command = new SqlCommand(query, connection);
+        try
+        {
+          connection.Open();
+          var queryResult = command.ExecuteScalar();
+          if (queryResult == null)
+          {
+            result = string.Empty;
+          }
+          else
+          {
+            result = queryResult.ToString();
+          }
+        }
+        catch (Exception exception)
+        {
+          Console.WriteLine($"exception : {exception.Message}");
+        }
+        finally
+        {
+          connection.Close();
+        }
+      }
+
+      if (result == null)
+      {
+        result = string.Empty;
+      }
+
+      return result;
+    }
+
+    private static string GetConnexionString()
+    {
+      return "Data Source=DESKTOP-MSI;Initial Catalog=StarWars2;Integrated Security=True";
+    }
+
+    public static bool WriteToDatabase(DateTime requestDate, double euro, double dollar)
+    {
+      bool result = false;
+      using (SqlConnection connection = new SqlConnection(GetConnexionString()))
+      {
+        string query = "INSERT INTO [dbo].[BitCoin] ([Date], [RateEuros], [RateDollar]) VALUES(@theDate, @rateEuro, @ratedollar)";
+
+        using (SqlCommand command = new SqlCommand(query, connection))
+        {
+          command.Parameters.AddWithValue("@theDate", requestDate);
+          command.Parameters.AddWithValue("@rateEuro", euro);
+          command.Parameters.AddWithValue("@ratedollar", dollar);
+
+          connection.Open();
+          var QueryResult = command.ExecuteNonQuery();
+
+          // Check Error
+          if (QueryResult < 0)
+          {
+            //var errorMessage = "Error inserting data into Database!";
+            result = false;
+          }
+          else
+          {
+            result = true;
+          }
+        }
+      }
+
+      return result;
     }
 
     public static string GetAPIFromUrl(string url)
@@ -141,7 +295,5 @@ namespace ConsoleAppGetAPI
       response.Close();
       return responseFromServer;
     }
-
-    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
   }
 }

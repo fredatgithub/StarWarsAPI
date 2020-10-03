@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace ConsoleAppGetAPI.Models
 {
@@ -24,7 +25,165 @@ namespace ConsoleAppGetAPI.Models
 
     public override string ToString()
     {
-      return base.ToString();
+      StringBuilder result = new StringBuilder();
+      result.Append($"name:{name},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"height:{height},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"mass:{mass},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"hair_color:{hair_color},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"skin_color:{skin_color},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"eye_color:{eye_color},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"birth_year:{birth_year},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"gender:{gender},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"homeworld:{homeworld},");
+      result.Append($"{Environment.NewLine}");
+
+      foreach (string film in films)
+      {
+        result.Append($"film:{film},");
+        result.Append($"{Environment.NewLine}");
+      }
+
+      foreach (string item in species)
+      {
+        result.Append($"species:{item},");
+        result.Append($"{Environment.NewLine}");
+      }
+
+      foreach (string item in vehicles)
+      {
+        result.Append($"vehicles:{item},");
+        result.Append($"{Environment.NewLine}");
+      }
+
+      foreach (string item in starships)
+      {
+        result.Append($"starships:{item},");
+        result.Append($"{Environment.NewLine}");
+      }
+
+      result.Append($"created:{created},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"edited:{edited},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"url:{url}");
+      result.Append($"{Environment.NewLine}");
+
+      return result.ToString();
+    }
+
+    public string ToJsonString()
+    {
+      StringBuilder result = new StringBuilder();
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"name\":\"{name}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"height\":\"{height}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"mass\":\"{mass}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"hair_color\":\"{hair_color}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"skin_color\":\"{skin_color}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"eye_color\":\"{eye_color}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"birth_year\":\"{birth_year}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"gender\":\"{gender}\",");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"\"homeworld\":\"{homeworld}\",");
+      result.Append($"{Environment.NewLine}");
+
+      if (films.Count > 0)
+      {
+        result.Append($"\"films\":[");
+        foreach (string film in films)
+        {
+          result.Append($"\"{film}\",");
+          result.Append($"{Environment.NewLine}");
+        }
+
+        result.Append($"],");
+        result.Append($"{Environment.NewLine}");
+      }
+      else
+      {
+        result.Append($"\"films\":[],");
+        result.Append($"{Environment.NewLine}");
+      }
+
+      if (species.Count > 0)
+      {
+        result.Append($"\"species\":[");
+        foreach (string item in species)
+        {
+          result.Append($"\"{item}\",");
+          result.Append($"{Environment.NewLine}");
+        }
+
+        result.Append($"],");
+        result.Append($"{Environment.NewLine}");
+      }
+      else
+      {
+        result.Append($"\"species\":[],");
+        result.Append($"{Environment.NewLine}");
+      }
+
+      if (vehicles.Count > 0)
+      {
+        result.Append($"\"vehicles\":[");
+        foreach (string item in vehicles)
+        {
+          result.Append($"\"{item}\",");
+          result.Append($"{Environment.NewLine}");
+        }
+
+        result.Append($"],");
+        result.Append($"{Environment.NewLine}");
+      }
+      else
+      {
+        result.Append($"\"vehicles\":[],");
+        result.Append($"{Environment.NewLine}");
+      }
+
+      if (starships.Count > 0)
+      {
+        result.Append($"\"starships\":[");
+        foreach (string item in starships)
+        {
+          result.Append($"\"{item}\",");
+          result.Append($"{Environment.NewLine}");
+        }
+
+        result.Append($"],");
+        result.Append($"{Environment.NewLine}");
+      }
+      else
+      {
+        result.Append($"\"starships\":[],");
+        result.Append($"{Environment.NewLine}");
+      }
+
+      result.Append($"created:{created},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"edited:{edited},");
+      result.Append($"{Environment.NewLine}");
+      result.Append($"url:{url},");
+      result.Append($"{Environment.NewLine}");
+      result.Append("}");
+      result.Append($"{Environment.NewLine}");
+
+      return result.ToString();
     }
   }
 }
