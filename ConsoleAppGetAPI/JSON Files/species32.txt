@@ -1,0 +1,21 @@
+{
+"name": "Kaminoan",
+"classification": "amphibian",
+"designation": "sentient",
+"skin_colors": "grey, blue",
+"hair_colors": "none",
+"eye_colors": "black",
+"average_lifespan": "80",
+"homeworld": "http://swapi.dev/api/planets/10/",
+"language": "Kaminoan",
+"people": [
+"http://swapi.dev/api/people/72/",
+"http://swapi.dev/api/people/73/"
+],
+"films": [
+"http://swapi.dev/api/films/5/"
+],
+"created": "20/12/2014 17:31:24",
+"edited": "20/12/2014 21:36:42",
+"url": "http://swapi.dev/api/species/32/"
+}

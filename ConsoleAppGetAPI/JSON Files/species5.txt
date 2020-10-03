@@ -1,0 +1,21 @@
+{
+"name": "Hutt",
+"classification": "gastropod",
+"designation": "sentient",
+"skin_colors": "green, brown, tan",
+"hair_colors": "n/a",
+"eye_colors": "yellow, red",
+"average_lifespan": "1000",
+"homeworld": "http://swapi.dev/api/planets/24/",
+"language": "Huttese",
+"people": [
+"http://swapi.dev/api/people/16/"
+],
+"films": [
+"http://swapi.dev/api/films/1/",
+"http://swapi.dev/api/films/3/"
+],
+"created": "10/12/2014 17:12:50",
+"edited": "20/12/2014 21:36:42",
+"url": "http://swapi.dev/api/species/5/"
+}

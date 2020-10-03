@@ -1,0 +1,21 @@
+{
+"name": "Raymus Antilles",
+"height": "188",
+"mass": "79",
+"hair_color": "brown",
+"skin_color": "light",
+"eye_color": "brown",
+"birth_year": "unknown",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/2/",
+"films": [
+"http://swapi.dev/api/films/1/",
+"http://swapi.dev/api/films/6/"
+],
+"species": [],
+"vehicles": [],
+"starships": [],
+"created": "20/12/2014 19:49:35",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/81/"
+}

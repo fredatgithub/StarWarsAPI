@@ -1,0 +1,18 @@
+{
+"name": "Toydaria",
+"rotation_period": "21",
+"orbital_period": "184",
+"diameter": "7900",
+"climate": "temperate",
+"gravity": "1",
+"terrain": "swamps, lakes",
+"surface_water": "unknown",
+"population": "11000000",
+"residents": [
+"http://swapi.dev/api/people/40/"
+],
+"films": [],
+"created": "19/12/2014 17:47:54",
+"edited": "20/12/2014 20:58:18",
+"url": "http://swapi.dev/api/planets/34/"
+}

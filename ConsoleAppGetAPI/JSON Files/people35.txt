@@ -1,0 +1,26 @@
+{
+"name": "Padmé Amidala",
+"height": "185",
+"mass": "45",
+"hair_color": "brown",
+"skin_color": "light",
+"eye_color": "brown",
+"birth_year": "46BBY",
+"gender": "female",
+"homeworld": "http://swapi.dev/api/planets/8/",
+"films": [
+"http://swapi.dev/api/films/4/",
+"http://swapi.dev/api/films/5/",
+"http://swapi.dev/api/films/6/"
+],
+"species": [],
+"vehicles": [],
+"starships": [
+"http://swapi.dev/api/starships/39/",
+"http://swapi.dev/api/starships/49/",
+"http://swapi.dev/api/starships/64/"
+],
+"created": "19/12/2014 17:28:26",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/35/"
+}

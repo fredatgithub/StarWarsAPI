@@ -1,0 +1,20 @@
+{
+"name": "Rodian",
+"classification": "sentient",
+"designation": "reptilian",
+"skin_colors": "green, blue",
+"hair_colors": "n/a",
+"eye_colors": "black",
+"average_lifespan": "unknown",
+"homeworld": "http://swapi.dev/api/planets/23/",
+"language": "Galatic Basic",
+"people": [
+"http://swapi.dev/api/people/15/"
+],
+"films": [
+"http://swapi.dev/api/films/1/"
+],
+"created": "10/12/2014 17:05:26",
+"edited": "20/12/2014 21:36:42",
+"url": "http://swapi.dev/api/species/4/"
+}

@@ -1,0 +1,24 @@
+{
+"name": "Wookie",
+"classification": "mammal",
+"designation": "sentient",
+"skin_colors": "gray",
+"hair_colors": "black, brown",
+"eye_colors": "blue, green, yellow, brown, golden, red",
+"average_lifespan": "400",
+"homeworld": "http://swapi.dev/api/planets/14/",
+"language": "Shyriiwook",
+"people": [
+"http://swapi.dev/api/people/13/",
+"http://swapi.dev/api/people/80/"
+],
+"films": [
+"http://swapi.dev/api/films/1/",
+"http://swapi.dev/api/films/2/",
+"http://swapi.dev/api/films/3/",
+"http://swapi.dev/api/films/6/"
+],
+"created": "10/12/2014 16:44:31",
+"edited": "20/12/2014 21:36:42",
+"url": "http://swapi.dev/api/species/3/"
+}

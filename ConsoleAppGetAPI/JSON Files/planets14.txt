@@ -1,0 +1,21 @@
+{
+"name": "Kashyyyk",
+"rotation_period": "26",
+"orbital_period": "381",
+"diameter": "12765",
+"climate": "tropical",
+"gravity": "1 standard",
+"terrain": "jungle, forests, lakes, rivers",
+"surface_water": "60",
+"population": "45000000",
+"residents": [
+"http://swapi.dev/api/people/13/",
+"http://swapi.dev/api/people/80/"
+],
+"films": [
+"http://swapi.dev/api/films/6/"
+],
+"created": "10/12/2014 13:32:00",
+"edited": "20/12/2014 20:58:18",
+"url": "http://swapi.dev/api/planets/14/"
+}

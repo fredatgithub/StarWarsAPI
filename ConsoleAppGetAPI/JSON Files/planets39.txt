@@ -1,0 +1,18 @@
+{
+"name": "Vulpter",
+"rotation_period": "22",
+"orbital_period": "391",
+"diameter": "14900",
+"climate": "temperate, artic",
+"gravity": "1",
+"terrain": "urban, barren",
+"surface_water": "unknown",
+"population": "421000000",
+"residents": [
+"http://swapi.dev/api/people/48/"
+],
+"films": [],
+"created": "20/12/2014 09:56:58",
+"edited": "20/12/2014 20:58:18",
+"url": "http://swapi.dev/api/planets/39/"
+}

@@ -1,0 +1,23 @@
+{
+"name": "Saesee Tiin",
+"height": "188",
+"mass": "unknown",
+"hair_color": "none",
+"skin_color": "pale",
+"eye_color": "orange",
+"birth_year": "unknown",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/47/",
+"films": [
+"http://swapi.dev/api/films/4/",
+"http://swapi.dev/api/films/6/"
+],
+"species": [
+"http://swapi.dev/api/species/24/"
+],
+"vehicles": [],
+"starships": [],
+"created": "20/12/2014 10:32:11",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/56/"
+}

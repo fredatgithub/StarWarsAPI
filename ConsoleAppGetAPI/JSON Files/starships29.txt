@@ -1,0 +1,22 @@
+{
+"name": "B-wing",
+"model": "A/SF-01 B-wing starfighter",
+"manufacturer": "Slayn & Korpil",
+"cost_in_credits": "220000",
+"length": "16.9",
+"max_atmosphering_speed": "950",
+"crew": "1",
+"passengers": "0",
+"cargo_capacity": "45",
+"consumables": "1 week",
+"hyperdrive_rating": "2.0",
+"MGLT": "91",
+"starship_class": "Assault Starfighter",
+"pilots": [],
+"films": [
+"http://swapi.dev/api/films/3/"
+],
+"created": "18/12/2014 11:18:04",
+"edited": "20/12/2014 21:23:49",
+"url": "http://swapi.dev/api/starships/29/"
+}

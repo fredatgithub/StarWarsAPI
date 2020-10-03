@@ -1,0 +1,22 @@
+{
+"name": "San Hill",
+"height": "191",
+"mass": "unknown",
+"hair_color": "none",
+"skin_color": "grey",
+"eye_color": "gold",
+"birth_year": "unknown",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/57/",
+"films": [
+"http://swapi.dev/api/films/5/"
+],
+"species": [
+"http://swapi.dev/api/species/34/"
+],
+"vehicles": [],
+"starships": [],
+"created": "20/12/2014 17:58:17",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/77/"
+}

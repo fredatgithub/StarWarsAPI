@@ -1,0 +1,22 @@
+{
+"name": "IG-88",
+"height": "200",
+"mass": "140",
+"hair_color": "none",
+"skin_color": "metal",
+"eye_color": "red",
+"birth_year": "15BBY",
+"gender": "none",
+"homeworld": "http://swapi.dev/api/planets/28/",
+"films": [
+"http://swapi.dev/api/films/2/"
+],
+"species": [
+"http://swapi.dev/api/species/2/"
+],
+"vehicles": [],
+"starships": [],
+"created": "15/12/2014 12:51:10",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/23/"
+}

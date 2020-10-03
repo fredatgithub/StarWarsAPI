@@ -1,0 +1,20 @@
+{
+"name": "Jango Fett",
+"height": "183",
+"mass": "79",
+"hair_color": "black",
+"skin_color": "tan",
+"eye_color": "brown",
+"birth_year": "66BBY",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/53/",
+"films": [
+"http://swapi.dev/api/films/5/"
+],
+"species": [],
+"vehicles": [],
+"starships": [],
+"created": "20/12/2014 16:54:41",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/69/"
+}

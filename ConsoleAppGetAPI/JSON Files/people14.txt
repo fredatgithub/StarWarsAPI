@@ -1,0 +1,25 @@
+{
+"name": "Han Solo",
+"height": "180",
+"mass": "80",
+"hair_color": "brown",
+"skin_color": "fair",
+"eye_color": "brown",
+"birth_year": "29BBY",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/22/",
+"films": [
+"http://swapi.dev/api/films/1/",
+"http://swapi.dev/api/films/2/",
+"http://swapi.dev/api/films/3/"
+],
+"species": [],
+"vehicles": [],
+"starships": [
+"http://swapi.dev/api/starships/10/",
+"http://swapi.dev/api/starships/22/"
+],
+"created": "10/12/2014 16:49:14",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/14/"
+}

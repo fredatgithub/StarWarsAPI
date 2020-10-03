@@ -1,0 +1,21 @@
+{
+"name": "Geonosian",
+"classification": "insectoid",
+"designation": "sentient",
+"skin_colors": "green, brown",
+"hair_colors": "none",
+"eye_colors": "green, hazel",
+"average_lifespan": "unknown",
+"homeworld": "http://swapi.dev/api/planets/11/",
+"language": "Geonosian",
+"people": [
+"http://swapi.dev/api/people/63/"
+],
+"films": [
+"http://swapi.dev/api/films/5/",
+"http://swapi.dev/api/films/6/"
+],
+"created": "20/12/2014 16:40:45",
+"edited": "20/12/2014 21:36:42",
+"url": "http://swapi.dev/api/species/28/"
+}

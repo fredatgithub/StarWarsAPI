@@ -1,0 +1,16 @@
+{
+"name": "Dantooine",
+"rotation_period": "25",
+"orbital_period": "378",
+"diameter": "9830",
+"climate": "temperate",
+"gravity": "1 standard",
+"terrain": "oceans, savannas, mountains, grasslands",
+"surface_water": "unknown",
+"population": "1000",
+"residents": [],
+"films": [],
+"created": "10/12/2014 17:23:29",
+"edited": "20/12/2014 20:58:18",
+"url": "http://swapi.dev/api/planets/25/"
+}

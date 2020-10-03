@@ -1,0 +1,23 @@
+{
+"name": "Watto",
+"height": "137",
+"mass": "unknown",
+"hair_color": "black",
+"skin_color": "blue, grey",
+"eye_color": "yellow",
+"birth_year": "unknown",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/34/",
+"films": [
+"http://swapi.dev/api/films/4/",
+"http://swapi.dev/api/films/5/"
+],
+"species": [
+"http://swapi.dev/api/species/13/"
+],
+"vehicles": [],
+"starships": [],
+"created": "19/12/2014 17:48:54",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/40/"
+}

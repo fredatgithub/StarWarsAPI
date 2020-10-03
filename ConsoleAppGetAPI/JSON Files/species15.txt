@@ -1,0 +1,24 @@
+{
+"name": "Twi'lek",
+"classification": "mammals",
+"designation": "sentient",
+"skin_colors": "orange, yellow, blue, green, pink, purple, tan",
+"hair_colors": "none",
+"eye_colors": "blue, brown, orange, pink",
+"average_lifespan": "unknown",
+"homeworld": "http://swapi.dev/api/planets/37/",
+"language": "Twi'leki",
+"people": [
+"http://swapi.dev/api/people/45/",
+"http://swapi.dev/api/people/46/"
+],
+"films": [
+"http://swapi.dev/api/films/3/",
+"http://swapi.dev/api/films/4/",
+"http://swapi.dev/api/films/5/",
+"http://swapi.dev/api/films/6/"
+],
+"created": "20/12/2014 09:48:02",
+"edited": "20/12/2014 21:36:42",
+"url": "http://swapi.dev/api/species/15/"
+}

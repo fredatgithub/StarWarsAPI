@@ -1,0 +1,22 @@
+{
+"name": "Ratts Tyerel",
+"height": "79",
+"mass": "15",
+"hair_color": "none",
+"skin_color": "grey, blue",
+"eye_color": "unknown",
+"birth_year": "unknown",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/38/",
+"films": [
+"http://swapi.dev/api/films/4/"
+],
+"species": [
+"http://swapi.dev/api/species/16/"
+],
+"vehicles": [],
+"starships": [],
+"created": "20/12/2014 09:53:15",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/47/"
+}

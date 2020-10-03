@@ -1,0 +1,19 @@
+{
+"name": "Corellia",
+"rotation_period": "25",
+"orbital_period": "329",
+"diameter": "11000",
+"climate": "temperate",
+"gravity": "1 standard",
+"terrain": "plains, urban, hills, forests",
+"surface_water": "70",
+"population": "3000000000",
+"residents": [
+"http://swapi.dev/api/people/14/",
+"http://swapi.dev/api/people/18/"
+],
+"films": [],
+"created": "10/12/2014 16:49:12",
+"edited": "20/12/2014 20:58:18",
+"url": "http://swapi.dev/api/planets/22/"
+}

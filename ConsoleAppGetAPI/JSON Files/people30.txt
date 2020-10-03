@@ -1,0 +1,22 @@
+{
+"name": "Wicket Systri Warrick",
+"height": "88",
+"mass": "20",
+"hair_color": "brown",
+"skin_color": "brown",
+"eye_color": "brown",
+"birth_year": "8BBY",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/7/",
+"films": [
+"http://swapi.dev/api/films/3/"
+],
+"species": [
+"http://swapi.dev/api/species/9/"
+],
+"vehicles": [],
+"starships": [],
+"created": "18/12/2014 11:21:58",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/30/"
+}

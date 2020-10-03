@@ -1,0 +1,20 @@
+{
+"name": "Mon Calamari",
+"classification": "amphibian",
+"designation": "sentient",
+"skin_colors": "red, blue, brown, magenta",
+"hair_colors": "none",
+"eye_colors": "yellow",
+"average_lifespan": "unknown",
+"homeworld": "http://swapi.dev/api/planets/31/",
+"language": "Mon Calamarian",
+"people": [
+"http://swapi.dev/api/people/27/"
+],
+"films": [
+"http://swapi.dev/api/films/3/"
+],
+"created": "18/12/2014 11:09:52",
+"edited": "20/12/2014 21:36:42",
+"url": "http://swapi.dev/api/species/8/"
+}

@@ -1,0 +1,21 @@
+{
+"name": "Togruta",
+"classification": "mammal",
+"designation": "sentient",
+"skin_colors": "red, white, orange, yellow, green, blue",
+"hair_colors": "none",
+"eye_colors": "red, orange, yellow, green, blue, black",
+"average_lifespan": "94",
+"homeworld": "http://swapi.dev/api/planets/58/",
+"language": "Togruti",
+"people": [
+"http://swapi.dev/api/people/78/"
+],
+"films": [
+"http://swapi.dev/api/films/5/",
+"http://swapi.dev/api/films/6/"
+],
+"created": "20/12/2014 18:44:03",
+"edited": "20/12/2014 21:36:42",
+"url": "http://swapi.dev/api/species/35/"
+}

@@ -1,0 +1,24 @@
+{
+"name": "Yoda's species",
+"classification": "mammal",
+"designation": "sentient",
+"skin_colors": "green, yellow",
+"hair_colors": "brown, white",
+"eye_colors": "brown, green, yellow",
+"average_lifespan": "900",
+"homeworld": "http://swapi.dev/api/planets/28/",
+"language": "Galactic basic",
+"people": [
+"http://swapi.dev/api/people/20/"
+],
+"films": [
+"http://swapi.dev/api/films/2/",
+"http://swapi.dev/api/films/3/",
+"http://swapi.dev/api/films/4/",
+"http://swapi.dev/api/films/5/",
+"http://swapi.dev/api/films/6/"
+],
+"created": "15/12/2014 12:27:22",
+"edited": "20/12/2014 21:36:42",
+"url": "http://swapi.dev/api/species/6/"
+}

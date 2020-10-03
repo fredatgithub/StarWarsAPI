@@ -1,0 +1,22 @@
+{
+"name": "Biggs Darklighter",
+"height": "183",
+"mass": "84",
+"hair_color": "black",
+"skin_color": "light",
+"eye_color": "brown",
+"birth_year": "24BBY",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/1/",
+"films": [
+"http://swapi.dev/api/films/1/"
+],
+"species": [],
+"vehicles": [],
+"starships": [
+"http://swapi.dev/api/starships/12/"
+],
+"created": "10/12/2014 15:59:50",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/9/"
+}

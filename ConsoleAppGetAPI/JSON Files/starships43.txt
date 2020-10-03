@@ -1,0 +1,22 @@
+{
+"name": "J-type diplomatic barge",
+"model": "J-type diplomatic barge",
+"manufacturer": "Theed Palace Space Vessel Engineering Corps, Nubia Star Drives",
+"cost_in_credits": "2000000",
+"length": "39",
+"max_atmosphering_speed": "2000",
+"crew": "5",
+"passengers": "10",
+"cargo_capacity": "unknown",
+"consumables": "1 year",
+"hyperdrive_rating": "0.7",
+"MGLT": "unknown",
+"starship_class": "Diplomatic barge",
+"pilots": [],
+"films": [
+"http://swapi.dev/api/films/5/"
+],
+"created": "20/12/2014 11:05:51",
+"edited": "20/12/2014 21:23:49",
+"url": "http://swapi.dev/api/starships/43/"
+}

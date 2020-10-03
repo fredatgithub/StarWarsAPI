@@ -1,0 +1,21 @@
+{
+"name": "Toydarian",
+"classification": "mammal",
+"designation": "sentient",
+"skin_colors": "blue, green, grey",
+"hair_colors": "none",
+"eye_colors": "yellow",
+"average_lifespan": "91",
+"homeworld": "http://swapi.dev/api/planets/34/",
+"language": "Toydarian",
+"people": [
+"http://swapi.dev/api/people/40/"
+],
+"films": [
+"http://swapi.dev/api/films/4/",
+"http://swapi.dev/api/films/5/"
+],
+"created": "19/12/2014 17:48:56",
+"edited": "20/12/2014 21:36:42",
+"url": "http://swapi.dev/api/species/13/"
+}

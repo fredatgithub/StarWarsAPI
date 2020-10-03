@@ -1,0 +1,33 @@
+{
+"name": "Naboo",
+"rotation_period": "26",
+"orbital_period": "312",
+"diameter": "12120",
+"climate": "temperate",
+"gravity": "1 standard",
+"terrain": "grassy hills, swamps, forests, mountains",
+"surface_water": "12",
+"population": "4500000000",
+"residents": [
+"http://swapi.dev/api/people/3/",
+"http://swapi.dev/api/people/21/",
+"http://swapi.dev/api/people/35/",
+"http://swapi.dev/api/people/36/",
+"http://swapi.dev/api/people/37/",
+"http://swapi.dev/api/people/38/",
+"http://swapi.dev/api/people/39/",
+"http://swapi.dev/api/people/42/",
+"http://swapi.dev/api/people/60/",
+"http://swapi.dev/api/people/61/",
+"http://swapi.dev/api/people/66/"
+],
+"films": [
+"http://swapi.dev/api/films/3/",
+"http://swapi.dev/api/films/4/",
+"http://swapi.dev/api/films/5/",
+"http://swapi.dev/api/films/6/"
+],
+"created": "10/12/2014 11:52:31",
+"edited": "20/12/2014 20:58:18",
+"url": "http://swapi.dev/api/planets/8/"
+}

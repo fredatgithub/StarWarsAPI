@@ -1,0 +1,22 @@
+{
+"name": "Tarfful",
+"height": "234",
+"mass": "136",
+"hair_color": "brown",
+"skin_color": "brown",
+"eye_color": "blue",
+"birth_year": "unknown",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/14/",
+"films": [
+"http://swapi.dev/api/films/6/"
+],
+"species": [
+"http://swapi.dev/api/species/3/"
+],
+"vehicles": [],
+"starships": [],
+"created": "20/12/2014 19:46:34",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/80/"
+}

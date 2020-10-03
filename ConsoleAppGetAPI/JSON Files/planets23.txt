@@ -1,0 +1,18 @@
+{
+"name": "Rodia",
+"rotation_period": "29",
+"orbital_period": "305",
+"diameter": "7549",
+"climate": "hot",
+"gravity": "1 standard",
+"terrain": "jungles, oceans, urban, swamps",
+"surface_water": "60",
+"population": "1300000000",
+"residents": [
+"http://swapi.dev/api/people/15/"
+],
+"films": [],
+"created": "10/12/2014 17:03:28",
+"edited": "20/12/2014 20:58:18",
+"url": "http://swapi.dev/api/planets/23/"
+}

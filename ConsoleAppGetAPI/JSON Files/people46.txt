@@ -1,0 +1,24 @@
+{
+"name": "Ayla Secura",
+"height": "178",
+"mass": "55",
+"hair_color": "none",
+"skin_color": "blue",
+"eye_color": "hazel",
+"birth_year": "48BBY",
+"gender": "female",
+"homeworld": "http://swapi.dev/api/planets/37/",
+"films": [
+"http://swapi.dev/api/films/4/",
+"http://swapi.dev/api/films/5/",
+"http://swapi.dev/api/films/6/"
+],
+"species": [
+"http://swapi.dev/api/species/15/"
+],
+"vehicles": [],
+"starships": [],
+"created": "20/12/2014 09:48:01",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/46/"
+}

@@ -1,0 +1,26 @@
+{
+"name": "Darth Maul",
+"height": "175",
+"mass": "80",
+"hair_color": "none",
+"skin_color": "red",
+"eye_color": "yellow",
+"birth_year": "54BBY",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/36/",
+"films": [
+"http://swapi.dev/api/films/4/"
+],
+"species": [
+"http://swapi.dev/api/species/22/"
+],
+"vehicles": [
+"http://swapi.dev/api/vehicles/42/"
+],
+"starships": [
+"http://swapi.dev/api/starships/41/"
+],
+"created": "19/12/2014 18:00:41",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/44/"
+}

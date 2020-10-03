@@ -1,0 +1,22 @@
+{
+"name": "Yarael Poof",
+"height": "264",
+"mass": "unknown",
+"hair_color": "none",
+"skin_color": "white",
+"eye_color": "yellow",
+"birth_year": "unknown",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/48/",
+"films": [
+"http://swapi.dev/api/films/4/"
+],
+"species": [
+"http://swapi.dev/api/species/25/"
+],
+"vehicles": [],
+"starships": [],
+"created": "20/12/2014 10:34:48",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/57/"
+}

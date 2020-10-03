@@ -1,0 +1,18 @@
+{
+"name": "Dathomir",
+"rotation_period": "24",
+"orbital_period": "491",
+"diameter": "10480",
+"climate": "temperate",
+"gravity": "0.9",
+"terrain": "forests, deserts, savannas",
+"surface_water": "unknown",
+"population": "5200",
+"residents": [
+"http://swapi.dev/api/people/44/"
+],
+"films": [],
+"created": "19/12/2014 18:00:40",
+"edited": "20/12/2014 20:58:18",
+"url": "http://swapi.dev/api/planets/36/"
+}

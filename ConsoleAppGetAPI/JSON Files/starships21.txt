@@ -1,0 +1,25 @@
+{
+"name": "Slave 1",
+"model": "Firespray-31-class patrol and attack",
+"manufacturer": "Kuat Systems Engineering",
+"cost_in_credits": "unknown",
+"length": "21.5",
+"max_atmosphering_speed": "1000",
+"crew": "1",
+"passengers": "6",
+"cargo_capacity": "70000",
+"consumables": "1 month",
+"hyperdrive_rating": "3.0",
+"MGLT": "70",
+"starship_class": "Patrol craft",
+"pilots": [
+"http://swapi.dev/api/people/22/"
+],
+"films": [
+"http://swapi.dev/api/films/2/",
+"http://swapi.dev/api/films/5/"
+],
+"created": "15/12/2014 13:00:56",
+"edited": "20/12/2014 21:23:49",
+"url": "http://swapi.dev/api/starships/21/"
+}

@@ -1,0 +1,22 @@
+{
+"name": "Bib Fortuna",
+"height": "180",
+"mass": "unknown",
+"hair_color": "none",
+"skin_color": "pale",
+"eye_color": "pink",
+"birth_year": "unknown",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/37/",
+"films": [
+"http://swapi.dev/api/films/3/"
+],
+"species": [
+"http://swapi.dev/api/species/15/"
+],
+"vehicles": [],
+"starships": [],
+"created": "20/12/2014 09:47:02",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/45/"
+}

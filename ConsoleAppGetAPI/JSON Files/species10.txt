@@ -1,0 +1,20 @@
+{
+"name": "Sullustan",
+"classification": "mammal",
+"designation": "sentient",
+"skin_colors": "pale",
+"hair_colors": "none",
+"eye_colors": "black",
+"average_lifespan": "unknown",
+"homeworld": "http://swapi.dev/api/planets/33/",
+"language": "Sullutese",
+"people": [
+"http://swapi.dev/api/people/31/"
+],
+"films": [
+"http://swapi.dev/api/films/3/"
+],
+"created": "18/12/2014 11:26:20",
+"edited": "20/12/2014 21:36:42",
+"url": "http://swapi.dev/api/species/10/"
+}

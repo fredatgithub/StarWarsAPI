@@ -1,0 +1,22 @@
+{
+"name": "Sebulba",
+"height": "112",
+"mass": "40",
+"hair_color": "none",
+"skin_color": "grey, red",
+"eye_color": "orange",
+"birth_year": "unknown",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/35/",
+"films": [
+"http://swapi.dev/api/films/4/"
+],
+"species": [
+"http://swapi.dev/api/species/14/"
+],
+"vehicles": [],
+"starships": [],
+"created": "19/12/2014 17:53:02",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/41/"
+}

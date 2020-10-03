@@ -1,0 +1,20 @@
+{
+"name": "Cliegg Lars",
+"height": "183",
+"mass": "unknown",
+"hair_color": "brown",
+"skin_color": "fair",
+"eye_color": "blue",
+"birth_year": "82BBY",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/1/",
+"films": [
+"http://swapi.dev/api/films/5/"
+],
+"species": [],
+"vehicles": [],
+"starships": [],
+"created": "20/12/2014 15:59:03",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/62/"
+}

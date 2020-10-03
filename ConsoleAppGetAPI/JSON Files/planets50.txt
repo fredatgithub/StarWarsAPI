@@ -1,0 +1,18 @@
+{
+"name": "Champala",
+"rotation_period": "27",
+"orbital_period": "318",
+"diameter": "unknown",
+"climate": "temperate",
+"gravity": "1",
+"terrain": "oceans, rainforests, plateaus",
+"surface_water": "unknown",
+"population": "3500000000",
+"residents": [
+"http://swapi.dev/api/people/59/"
+],
+"films": [],
+"created": "20/12/2014 10:52:51",
+"edited": "20/12/2014 20:58:18",
+"url": "http://swapi.dev/api/planets/50/"
+}

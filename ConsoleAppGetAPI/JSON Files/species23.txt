@@ -1,0 +1,21 @@
+{
+"name": "Tholothian",
+"classification": "mammal",
+"designation": "sentient",
+"skin_colors": "dark",
+"hair_colors": "unknown",
+"eye_colors": "blue, indigo",
+"average_lifespan": "unknown",
+"homeworld": "http://swapi.dev/api/planets/46/",
+"language": "unknown",
+"people": [
+"http://swapi.dev/api/people/55/"
+],
+"films": [
+"http://swapi.dev/api/films/4/",
+"http://swapi.dev/api/films/6/"
+],
+"created": "20/12/2014 10:29:13",
+"edited": "20/12/2014 21:36:42",
+"url": "http://swapi.dev/api/species/23/"
+}

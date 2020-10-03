@@ -1,0 +1,22 @@
+{
+"name": "Owen Lars",
+"height": "178",
+"mass": "120",
+"hair_color": "brown, grey",
+"skin_color": "light",
+"eye_color": "blue",
+"birth_year": "52BBY",
+"gender": "male",
+"homeworld": "http://swapi.dev/api/planets/1/",
+"films": [
+"http://swapi.dev/api/films/1/",
+"http://swapi.dev/api/films/5/",
+"http://swapi.dev/api/films/6/"
+],
+"species": [],
+"vehicles": [],
+"starships": [],
+"created": "10/12/2014 15:52:14",
+"edited": "20/12/2014 21:17:50",
+"url": "http://swapi.dev/api/people/6/"
+}

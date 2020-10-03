@@ -1,0 +1,20 @@
+{
+"name": "Aleena",
+"classification": "reptile",
+"designation": "sentient",
+"skin_colors": "blue, gray",
+"hair_colors": "none",
+"eye_colors": "unknown",
+"average_lifespan": "79",
+"homeworld": "http://swapi.dev/api/planets/38/",
+"language": "Aleena",
+"people": [
+"http://swapi.dev/api/people/47/"
+],
+"films": [
+"http://swapi.dev/api/films/4/"
+],
+"created": "20/12/2014 09:53:16",
+"edited": "20/12/2014 21:36:42",
+"url": "http://swapi.dev/api/species/16/"
+}
