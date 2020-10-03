@@ -13,7 +13,8 @@ namespace ConsoleAppGetAPI
     static void Main()
     {
       Action<string> display = Console.WriteLine;
-      display("Get JSON from Starwars API");
+      display("Get JSON data from Starwars API");
+      int timeToSleep = 1500;
       string url1 = "https://swapi.dev/api/people/1/";
 
       string apiUrlBase = "https://swapi.dev/api";
@@ -34,7 +35,7 @@ namespace ConsoleAppGetAPI
         myDeserializedClass = JsonConvert.DeserializeObject<People>(myJsonResponse);
         display($"{myDeserializedClass}");
         insertResult = WriteToFile(myDeserializedClass.ToJsonString(), className, i);
-        Thread.Sleep(1500);
+        Thread.Sleep(timeToSleep);
       }
 
       // planets
@@ -49,7 +50,7 @@ namespace ConsoleAppGetAPI
         myDeserializedClass = JsonConvert.DeserializeObject<Planets>(myJsonResponse);
         display($"{myDeserializedClass}");
         insertResult = WriteToFile(myDeserializedClass.ToJsonString(), className, i);
-        Thread.Sleep(1500);
+        Thread.Sleep(timeToSleep);
       }
 
       // starships
@@ -69,7 +70,7 @@ namespace ConsoleAppGetAPI
         myDeserializedClass = JsonConvert.DeserializeObject<Starships>(myJsonResponse);
         display($"{myDeserializedClass}");
         insertResult = WriteToFile(myDeserializedClass.ToJsonString(), className, i);
-        Thread.Sleep(1500);
+        Thread.Sleep(timeToSleep);
       }
 
       // films
@@ -84,7 +85,7 @@ namespace ConsoleAppGetAPI
         myDeserializedClass = JsonConvert.DeserializeObject<Films>(myJsonResponse);
         display($"{myDeserializedClass}");
         insertResult = WriteToFile(myDeserializedClass.ToJsonString(), className, i);
-        Thread.Sleep(1500);
+        Thread.Sleep(timeToSleep);
       }
 
       // species
@@ -99,7 +100,7 @@ namespace ConsoleAppGetAPI
         myDeserializedClass = JsonConvert.DeserializeObject<Species>(myJsonResponse);
         display($"{myDeserializedClass}");
         insertResult = WriteToFile(myDeserializedClass.ToJsonString(), className, i);
-        Thread.Sleep(1500);
+        Thread.Sleep(timeToSleep);
       }
 
       display("Press any key to exit:");

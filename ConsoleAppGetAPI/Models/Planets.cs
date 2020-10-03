@@ -24,24 +24,25 @@ namespace ConsoleAppGetAPI.Models
     public string ToJsonString()
     {
       StringBuilder result = new StringBuilder();
+      result.Append("{");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"name\":\"{name}\",");
+      result.Append($"\"name\": \"{name}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"rotation_period\":\"{rotation_period}\",");
+      result.Append($"\"rotation_period\": \"{rotation_period}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"orbital_period\":\"{orbital_period}\",");
+      result.Append($"\"orbital_period\": \"{orbital_period}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"diameter\":\"{diameter}\",");
+      result.Append($"\"diameter\": \"{diameter}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"climate\":\"{climate}\",");
+      result.Append($"\"climate\": \"{climate}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"gravity\":\"{gravity}\",");
+      result.Append($"\"gravity\": \"{gravity}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"terrain\":\"{terrain}\",");
+      result.Append($"\"terrain\": \"{terrain}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"surface_water\":\"{surface_water}\",");
+      result.Append($"\"surface_water\": \"{surface_water}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"population\":\"{population}\",");
+      result.Append($"\"population\": \"{population}\",");
       result.Append($"{Environment.NewLine}");
 
       int counter = 0;
@@ -50,7 +51,7 @@ namespace ConsoleAppGetAPI.Models
       {
         counter = 0;
         comma = ",";
-        result.Append($"\"residents\":[");
+        result.Append($"\"residents\": [");
         result.Append($"{Environment.NewLine}");
         foreach (string item in residents)
         {
@@ -69,7 +70,7 @@ namespace ConsoleAppGetAPI.Models
       }
       else
       {
-        result.Append($"\"residents\":[],");
+        result.Append($"\"residents\": [],");
         result.Append($"{Environment.NewLine}");
       }
 
@@ -77,7 +78,7 @@ namespace ConsoleAppGetAPI.Models
       {
         counter = 0;
         comma = ",";
-        result.Append($"\"films\":[");
+        result.Append($"\"films\": [");
         result.Append($"{Environment.NewLine}");
         foreach (string item in films)
         {
@@ -96,15 +97,15 @@ namespace ConsoleAppGetAPI.Models
       }
       else
       {
-        result.Append($"\"films\":[],");
+        result.Append($"\"films\": [],");
         result.Append($"{Environment.NewLine}");
       }
 
-      result.Append($"created:{created},");
+      result.Append($"\"created\": \"{created}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"edited:{edited},");
+      result.Append($"\"edited\": \"{edited}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"url:{url}");
+      result.Append($"\"url\": \"{url}\"");
       result.Append($"{Environment.NewLine}");
       result.Append("}");
       result.Append($"{Environment.NewLine}");

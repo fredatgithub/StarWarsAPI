@@ -84,23 +84,23 @@ namespace ConsoleAppGetAPI.Models
       StringBuilder result = new StringBuilder();
       result.Append("{");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"name\":\"{name}\",");
+      result.Append($"\"name\": \"{name}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"height\":\"{height}\",");
+      result.Append($"\"height\": \"{height}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"mass\":\"{mass}\",");
+      result.Append($"\"mass\": \"{mass}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"hair_color\":\"{hair_color}\",");
+      result.Append($"\"hair_color\": \"{hair_color}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"skin_color\":\"{skin_color}\",");
+      result.Append($"\"skin_color\": \"{skin_color}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"eye_color\":\"{eye_color}\",");
+      result.Append($"\"eye_color\": \"{eye_color}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"birth_year\":\"{birth_year}\",");
+      result.Append($"\"birth_year\": \"{birth_year}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"gender\":\"{gender}\",");
+      result.Append($"\"gender\": \"{gender}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"homeworld\":\"{homeworld}\",");
+      result.Append($"\"homeworld\": \"{homeworld}\",");
       result.Append($"{Environment.NewLine}");
 
       int counter = 0;
@@ -109,7 +109,7 @@ namespace ConsoleAppGetAPI.Models
       {
         counter = 0;
         comma = ",";
-        result.Append($"\"films\":[");
+        result.Append($"\"films\": [");
         result.Append($"{Environment.NewLine}");
         foreach (string film in films)
         {
@@ -128,7 +128,7 @@ namespace ConsoleAppGetAPI.Models
       }
       else
       {
-        result.Append($"\"films\":[],");
+        result.Append($"\"films\": [],");
         result.Append($"{Environment.NewLine}");
       }
 
@@ -136,7 +136,7 @@ namespace ConsoleAppGetAPI.Models
       {
         counter = 0;
         comma = ",";
-        result.Append($"\"species\":[");
+        result.Append($"\"species\": [");
         result.Append($"{Environment.NewLine}");
         foreach (string item in species)
         {
@@ -155,7 +155,7 @@ namespace ConsoleAppGetAPI.Models
       }
       else
       {
-        result.Append($"\"species\":[],");
+        result.Append($"\"species\": [],");
         result.Append($"{Environment.NewLine}");
       }
 
@@ -163,7 +163,7 @@ namespace ConsoleAppGetAPI.Models
       {
         counter = 0;
         comma = ",";
-        result.Append($"\"vehicles\":[");
+        result.Append($"\"vehicles\": [");
         result.Append($"{Environment.NewLine}");
         foreach (string item in vehicles)
         {
@@ -182,7 +182,7 @@ namespace ConsoleAppGetAPI.Models
       }
       else
       {
-        result.Append($"\"vehicles\":[],");
+        result.Append($"\"vehicles\": [],");
         result.Append($"{Environment.NewLine}");
       }
 
@@ -190,7 +190,7 @@ namespace ConsoleAppGetAPI.Models
       {
         counter = 0;
         comma = ",";
-        result.Append($"\"starships\":[");
+        result.Append($"\"starships\": [");
         result.Append($"{Environment.NewLine}");
         foreach (string item in starships)
         {
@@ -209,15 +209,15 @@ namespace ConsoleAppGetAPI.Models
       }
       else
       {
-        result.Append($"\"starships\":[],");
+        result.Append($"\"starships\": [],");
         result.Append($"{Environment.NewLine}");
       }
 
-      result.Append($"created:{created},");
+      result.Append($"\"created\": \"{created}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"edited:{edited},");
+      result.Append($"\"edited\": \"{edited}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"url:{url}");
+      result.Append($"\"url\": \"{url}\"");
       result.Append($"{Environment.NewLine}");
       result.Append("}");
       result.Append($"{Environment.NewLine}");

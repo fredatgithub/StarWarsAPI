@@ -25,24 +25,25 @@ namespace ConsoleAppGetAPI.Models
     public string ToJsonString()
     {
       StringBuilder result = new StringBuilder();
+      result.Append("{");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"name\":\"{name}\",");
+      result.Append($"\"name\": \"{name}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"classification\":\"{classification}\",");
+      result.Append($"\"classification\": \"{classification}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"designation\":\"{designation}\",");
+      result.Append($"\"designation\": \"{designation}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"skin_colors\":\"{skin_colors}\",");
+      result.Append($"\"skin_colors\": \"{skin_colors}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"hair_colors\":\"{hair_colors}\",");
+      result.Append($"\"hair_colors\": \"{hair_colors}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"eye_colors\":\"{eye_colors}\",");
+      result.Append($"\"eye_colors\": \"{eye_colors}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"average_lifespan\":\"{average_lifespan}\",");
+      result.Append($"\"average_lifespan\": \"{average_lifespan}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"homeworld\":\"{homeworld}\",");
+      result.Append($"\"homeworld\": \"{homeworld}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"language\":\"{language}\",");
+      result.Append($"\"language\": \"{language}\",");
       result.Append($"{Environment.NewLine}");
 
       int counter = 0;
@@ -51,7 +52,7 @@ namespace ConsoleAppGetAPI.Models
       {
         counter = 0;
         comma = ",";
-        result.Append($"\"people\":[");
+        result.Append($"\"people\": [");
         result.Append($"{Environment.NewLine}");
         foreach (string item in people)
         {
@@ -70,7 +71,7 @@ namespace ConsoleAppGetAPI.Models
       }
       else
       {
-        result.Append($"\"people\":[],");
+        result.Append($"\"people\": [],");
         result.Append($"{Environment.NewLine}");
       }
 
@@ -78,7 +79,7 @@ namespace ConsoleAppGetAPI.Models
       {
         counter = 0;
         comma = ",";
-        result.Append($"\"films\":[");
+        result.Append($"\"films\": [");
         result.Append($"{Environment.NewLine}");
         foreach (string item in films)
         {
@@ -97,15 +98,15 @@ namespace ConsoleAppGetAPI.Models
       }
       else
       {
-        result.Append($"\"films\":[],");
+        result.Append($"\"films\": [],");
         result.Append($"{Environment.NewLine}");
       }
 
-      result.Append($"created:{created},");
+      result.Append($"\"created\": \"{created}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"edited:{edited},");
+      result.Append($"\"edited\": \"{edited}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"url:{url}");
+      result.Append($"\"url\": \"{url}\"");
       result.Append($"{Environment.NewLine}");
       result.Append("}");
       result.Append($"{Environment.NewLine}");

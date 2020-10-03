@@ -24,18 +24,19 @@ namespace ConsoleAppGetAPI.Models
     public string ToJsonString()
     {
       StringBuilder result = new StringBuilder();
+      result.Append("{");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"title\":\"{title}\",");
+      result.Append($"\"title\": \"{title}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"episode_id\":\"{episode_id}\",");
+      result.Append($"\"episode_id\": \"{episode_id}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"opening_crawl\":\"{opening_crawl}\",");
+      result.Append($"\"opening_crawl\": \"{opening_crawl}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"director\":\"{director}\",");
+      result.Append($"\"director\": \"{director}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"producer\":\"{producer}\",");
+      result.Append($"\"producer\": \"{producer}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"\"release_date\":\"{release_date}\",");
+      result.Append($"\"release_date\": \"{release_date}\",");
       result.Append($"{Environment.NewLine}");
 
       int counter = 0;
@@ -44,7 +45,7 @@ namespace ConsoleAppGetAPI.Models
       {
         counter = 0;
         comma = ",";
-        result.Append($"\"characters\":[");
+        result.Append($"\"characters\": [");
         result.Append($"{Environment.NewLine}");
         foreach (string item in characters)
         {
@@ -63,7 +64,7 @@ namespace ConsoleAppGetAPI.Models
       }
       else
       {
-        result.Append($"\"characters\":[],");
+        result.Append($"\"characters\": [],");
         result.Append($"{Environment.NewLine}");
       }
 
@@ -71,7 +72,7 @@ namespace ConsoleAppGetAPI.Models
       {
         counter = 0;
         comma = ",";
-        result.Append($"\"planets\":[");
+        result.Append($"\"planets\": [");
         result.Append($"{Environment.NewLine}");
         foreach (string item in planets)
         {
@@ -90,7 +91,7 @@ namespace ConsoleAppGetAPI.Models
       }
       else
       {
-        result.Append($"\"planets\":[],");
+        result.Append($"\"planets\": [],");
         result.Append($"{Environment.NewLine}");
       }
 
@@ -98,7 +99,7 @@ namespace ConsoleAppGetAPI.Models
       {
         counter = 0;
         comma = ",";
-        result.Append($"\"starships\":[");
+        result.Append($"\"starships\": [");
         result.Append($"{Environment.NewLine}");
         foreach (string item in starships)
         {
@@ -117,7 +118,7 @@ namespace ConsoleAppGetAPI.Models
       }
       else
       {
-        result.Append($"\"starships\":[],");
+        result.Append($"\"starships\": [],");
         result.Append($"{Environment.NewLine}");
       }
 
@@ -125,7 +126,7 @@ namespace ConsoleAppGetAPI.Models
       {
         counter = 0;
         comma = ",";
-        result.Append($"\"vehicles\":[");
+        result.Append($"\"vehicles\": [");
         result.Append($"{Environment.NewLine}");
         foreach (string item in vehicles)
         {
@@ -144,7 +145,7 @@ namespace ConsoleAppGetAPI.Models
       }
       else
       {
-        result.Append($"\"vehicles\":[],");
+        result.Append($"\"vehicles\": [],");
         result.Append($"{Environment.NewLine}");
       }
 
@@ -152,7 +153,7 @@ namespace ConsoleAppGetAPI.Models
       {
         counter = 0;
         comma = ",";
-        result.Append($"\"species\":[");
+        result.Append($"\"species\": [");
         result.Append($"{Environment.NewLine}");
         foreach (string item in species)
         {
@@ -171,15 +172,15 @@ namespace ConsoleAppGetAPI.Models
       }
       else
       {
-        result.Append($"\"species\":[],");
+        result.Append($"\"species\": [],");
         result.Append($"{Environment.NewLine}");
       }
 
-      result.Append($"created:{created},");
+      result.Append($"\"created\": \"{created}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"edited:{edited},");
+      result.Append($"\"edited\": \"{edited}\",");
       result.Append($"{Environment.NewLine}");
-      result.Append($"url:{url}");
+      result.Append($"\"url\": \"{url}\"");
       result.Append($"{Environment.NewLine}");
       result.Append("}");
       result.Append($"{Environment.NewLine}");
