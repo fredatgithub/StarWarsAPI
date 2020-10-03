@@ -56,12 +56,23 @@ namespace ConsoleAppGetAPI.Models
       result.Append($"\"starship_class\":\"{starship_class}\",");
       result.Append($"{Environment.NewLine}");
 
+      int counter = 0;
+      string comma = ",";
       if (pilots.Count > 0)
       {
+        counter = 0;
+        comma = ",";
         result.Append($"\"pilots\":[");
+        result.Append($"{Environment.NewLine}");
         foreach (string item in pilots)
         {
-          result.Append($"\"{item}\",");
+          counter++;
+          if (counter == pilots.Count)
+          {
+            comma = string.Empty;
+          }
+
+          result.Append($"\"{item}\"{comma}");
           result.Append($"{Environment.NewLine}");
         }
 
@@ -76,10 +87,19 @@ namespace ConsoleAppGetAPI.Models
 
       if (films.Count > 0)
       {
+        counter = 0;
+        comma = ",";
         result.Append($"\"films\":[");
+        result.Append($"{Environment.NewLine}");
         foreach (string item in films)
         {
-          result.Append($"\"{item}\",");
+          counter++;
+          if (counter == films.Count)
+          {
+            comma = string.Empty;
+          }
+
+          result.Append($"\"{item}\"{comma}");
           result.Append($"{Environment.NewLine}");
         }
 
@@ -96,7 +116,7 @@ namespace ConsoleAppGetAPI.Models
       result.Append($"{Environment.NewLine}");
       result.Append($"edited:{edited},");
       result.Append($"{Environment.NewLine}");
-      result.Append($"url:{url},");
+      result.Append($"url:{url}");
       result.Append($"{Environment.NewLine}");
       result.Append("}");
       result.Append($"{Environment.NewLine}");
