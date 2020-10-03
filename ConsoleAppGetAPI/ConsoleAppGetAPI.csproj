@@ -266,6 +266,14 @@
     <Content Include="JSON Files\starships43.txt" />
     <Content Include="JSON Files\starships5.txt" />
     <Content Include="JSON Files\starships9.txt" />
+    <Content Include="SQL script files\Create Films table.sql" />
+    <Content Include="SQL script files\Create People table.sql" />
+    <Content Include="SQL script files\Create Planets table.sql" />
+    <Content Include="SQL script files\Create Species table.sql" />
+    <Content Include="SQL script files\Create Starships table.sql" />
+    <Content Include="SQL script files\Create StarWars database.sql" />
+    <Content Include="SQL script files\Create Transports table.sql" />
+    <Content Include="SQL script files\Create Vehicles table.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
